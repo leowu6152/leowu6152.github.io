@@ -1,0 +1,162 @@
+<HTML>
+<HEAD>
+    <TITLE>Basic steps 2</TITLE>
+    <STYLE type="text/css">
+    nav ul ul {
+display: none;
+}
+
+/*specifies that the dropdown will display as 200 px wide blocks */
+nav ul li:hover > ul {
+display: block;
+width: 200px;
+}
+
+/* original look of the menu before mouseover. Also need to specify that it will have a table shape. Border radius controls how round the corners are. */
+nav ul {
+background: #000000; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 200px;
+padding-top: 0px;
+border-radius: 0px; 
+list-style: none;
+position: relative;
+display: inline-table;
+}
+
+/*This sets the width, color, alignment of the text for the dropdown items */
+nav ul li {
+float: left;
+width: 200px;
+text-align: center;
+color: #FFFFFF;
+}
+
+/*THIS IS WHERE YOU CAN SET THE COLOR FOR THE MAIN MENU ITEM WHEN YOU GO OVER IT */
+nav ul li:hover {
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+
+/* color for the link in the menu*/
+nav ul li:hover a {
+color: #fff;
+}
+
+nav ul li a {
+display: block; padding: 25px 40px;
+
+}
+
+nav ul ul {
+background: #5f6975; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; 
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+
+nav ul ul li a {
+padding: 0px 0px;
+color: #fff;
+} 
+
+/*background color when you go over the links can also change color of text here if you want */
+nav ul ul li a:hover {
+background: #000000;
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+
+
+    body {
+    background-color: #D7DF01;
+}
+    </STYLE>
+</HEAD>
+<BODY>
+  <NAV>
+<UL>
+<LI>Home</LI>
+
+
+<LI>Levels
+  <UL>
+    <LI><A href='basicsteps.html'>Basic</A></LI>
+    
+    <LI>Advanced</LI>
+  </UL>
+</LI>
+<LI>Videos
+  <UL>
+    <LI><A href='<HTML>.html'>Basic</A></LI>
+
+    <LI>Advanced</LI>
+  </UL>
+</LI>
+
+<LI>Creators
+  <UL>
+    <LI><A href='https://www.youtube.com/channel/UCN7PL9bnvk4df4LSi-klzpA'>Yann</A></LI>
+    <LI><A href='https://www.youtube.com/channel/UC4ujVhO9YHCvtflSBJzrQFw?view_as=subscriber'>Leo Wu</A></LI>
+  </UL>
+</LI>
+
+</UL>
+
+</NAV>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="basic2.mp4" type="video/mp4">
+    <source src="basic2.ogg" type="video/ogg">
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 760; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 520; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 620; 
+} 
+</script> 
+This is layups it's the most important skills when playing basketball
+
+<form>
+<input type="button" value="Next" onclick="window.location.href='Summative.html'" />
+<form>
+<input type="button" value="Back" onclick="window.location.href='<HTML>.html'" />
+</form>
+</form>
+<form>
+<input type="button" value="Home" onclick="window.location.href='Summative.html'" />
+</form>
+
+</BODY>
