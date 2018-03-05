@@ -1,0 +1,221 @@
+<HTML>
+<HEAD>
+	<TITLE>IT Summative</TITLE>
+	<STYLE type="text/css">
+* {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Calibri, sans-serif;
+      }
+      .background-wrap {
+        position: fixed;
+        z-index: -1000;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+      }
+      
+      #video-bg-elem {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+      }
+      .content {
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        z-index: 1000;
+        background-color: rgba(0,0,0,0.7);
+      }
+      .content h1 {
+        text-align: center;
+        font-size: 65px;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #fff;
+        padding-top: 15%;
+        margin-bottom: 10px;
+      }
+      .content p {
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: #aaa;
+      }
+      
+  img {
+    width:100%;
+}
+	nav ul ul {
+display: none;
+}
+
+/*specifies that the dropdown will display as 200 px wide blocks */
+nav ul li:hover > ul {
+display: block;
+width: 200px;
+}
+
+/* original look of the menu before mouseover. Also need to specify that it will have a table shape. Border radius controls how round the corners are. */
+nav ul {
+background: #000000; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 200px;
+padding-top: 0px;
+border-radius: 0px; 
+list-style: none;
+position: relative;
+display: inline-table;
+}
+
+/*This sets the width, color, alignment of the text for the dropdown items */
+nav ul li {
+float: left;
+width: 200px;
+text-align: center;
+color: #FFFFFF;
+}
+
+/*THIS IS WHERE YOU CAN SET THE COLOR FOR THE MAIN MENU ITEM WHEN YOU GO OVER IT */
+nav ul li:hover {
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+
+/* color for the link in the menu*/
+nav ul li:hover a {
+color: #fff;
+}
+
+nav ul li a {
+display: block; padding: 25px 40px;
+
+}
+
+nav ul ul {
+background: #5f6975; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; 
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+
+nav ul ul li a {
+padding: 0px 0px;
+color: #fff;
+} 
+
+/*background color when you go over the links can also change color of text here if you want */
+nav ul ul li a:hover {
+background: #000000;
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+p  {
+    color: black;
+    font-family: courier;
+    font-size: 200%;
+}
+body {
+    background-color: #EF0C0C;
+  }
+
+#video1{
+  position: absolute;
+  z-index:-1;
+  opacity: 0.5;
+  left: 0;
+}
+
+#box1{
+  position: absolute;
+  width: 100%;
+  height: 84%;
+  background-color: red;
+  z-index: -2;
+}
+#play_button {
+    position:relative;
+    transition: .5s ease;
+    top: 491px;
+    left: 0px;
+    right: -420px;
+    bottom: -491px;
+</STYLE>
+</HEAD>
+<BODY bgcolor='black'>
+  <div class="background-wrap">
+      <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted"> 
+        <source src="movie.mp4" type="video/mp4">
+        Video not supported
+      </video>          
+    </div>
+
+<CENTER><header class="w3-container w3-center w3-padding-32"> 
+  <h1><b style="background-color:Red;">Credit</b></h1></header></CENTER>
+ 
+</header>
+<p style="text-align:center;">by Yann and Leo</h1>
+<NAV>
+<UL>
+<LI>Home</LI>
+
+
+<LI>Levels
+	<UL>
+		<LI><A href='basicsteps.html'>Basic</A></LI>
+		
+		<LI>Advanced</LI>
+	</UL>
+</LI>
+<LI>Videos
+	<UL>
+		<LI><A href='<HTML>.html'>Basic</A></LI>
+
+		<LI>Advanced</LI>
+	</UL>
+</LI>
+
+<LI>Creators
+	<UL>
+		<LI><A href='https://www.youtube.com/channel/UCN7PL9bnvk4df4LSi-klzpA'>Yann</A></LI>
+		<LI><A href='https://www.youtube.com/channel/UC4ujVhO9YHCvtflSBJzrQFw?view_as=subscriber'>Leo Wu</A></LI>
+	</UL>
+</LI>
+
+</UL>
+
+</NAV>
+
+
+<script> 
+
+</script> 
+<br>
+<p><font size="4"><span style="color:blue">We use Sublime text to do the websites. We got the images when we were recording the video. Leo 
+<br>
+<br>
+<IMG src='yann.png' style="width:300px;height:200px;"><span style="color:blue">Yann</span></IMG><br>
+<IMG src='leo.png' style="width:200px;height:270px;"><span style="color:blue">Leo</span></IMG>
+</BODY>
+</HTML>

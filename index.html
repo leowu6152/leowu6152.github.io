@@ -1,0 +1,292 @@
+<html>
+	<head>
+		<title>Video Background</title>
+
+		<style type="text/css">
+	/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+		  img {
+    width:100%;
+}
+	nav ul ul {
+display: none;
+}
+
+/*specifies that the dropdown will display as 200 px wide blocks */
+nav ul li:hover > ul {
+display: block;
+width: 200px;
+}
+
+/* original look of the menu before mouseover. Also need to specify that it will have a table shape. Border radius controls how round the corners are. */
+nav ul {
+background: #000000; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 200px;
+padding-top: 0px;
+border-radius: 0px; 
+list-style: none;
+position: relative;
+display: inline-table;
+}
+
+/*This sets the width, color, alignment of the text for the dropdown items */
+nav ul li {
+float: left;
+width: 200px;
+text-align: center;
+color: #FFFFFF;
+}
+
+/*THIS IS WHERE YOU CAN SET THE COLOR FOR THE MAIN MENU ITEM WHEN YOU GO OVER IT */
+nav ul li:hover {
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+
+/* color for the link in the menu*/
+nav ul li:hover a {
+color: #fff;
+}
+
+nav ul li a {
+display: block; padding: 25px 40px;
+
+}
+
+nav ul ul {
+background: #5f6975; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; 
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+
+nav ul ul li a {
+padding: 0px 0px;
+color: #fff;
+} 
+
+/*background color when you go over the links can also change color of text here if you want */
+nav ul ul li a:hover {
+background: #000000;
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+p  {
+    color: black;
+    font-family: courier;
+    font-size: 200%;
+}
+			  * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: #e0e0e0;
+                font-family: Arial, sans-serif;
+            }
+            
+            .button {
+                display: block;
+                width: 180px;
+                height: 60px;
+                position: relative;
+                border: 2px solid #04a;
+                border-radius: 5px;
+                margin: 200px auto;
+                background-color: #06c;
+            }
+            .button .content {
+                display: block;
+                position: absolute;
+                bottom: 6px;
+                width: 100%;
+                height: 100%;
+                line-height: 60px;
+                text-align: center;
+                background-color: #09f;
+                color: #fff;
+                text-transform: uppercase;
+                box-shadow: 0 6px 0 #06c;
+                border-radius: 5px;
+                transition: all 0.1s linear;
+            }
+            
+            .button:active .content {
+                bottom: 0;
+                box-shadow: 0 0 0 #06c;
+            }
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				font-family: Calibri, sans-serif;
+			}
+			.background-wrap {
+				position: fixed;
+				z-index: -1000;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+
+			}
+			
+			#video-bg-elem {
+				position: absolute;
+				top: 0;
+				left: 0;
+				min-height: 100%;
+				min-width: 100%;
+			}
+			.content {
+				position: absolute;
+				width: 100%;
+				min-height: 100%;
+				z-index: 1000;
+				background-color: rgba(0,0,0,0.7);
+			}
+			.content h1 {
+				text-align: center;
+				font-size: 65px;
+				text-transform: uppercase;
+				font-weight: 300;
+				color: #fff;
+				padding-top: 15%;
+				margin-bottom: 10px;
+			}
+			.content p {
+				text-align: center;
+				font-size: 20px;
+				letter-spacing: 3px;
+				color: #aaa;
+			}
+			#next{
+				position: absolute;
+				z-index: 10;
+				width: 100px;
+				height: 70px;
+				left: 10px
+			}
+			
+		</style>
+		
+		
+	</head>
+	<body background="#000000">
+		
+		
+		
+
+<div class="background-wrap">
+<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted"> 
+<source src="movie.mp4" type="video/mp4">
+				Video not supported
+			</video>          
+</div>
+
+
+<div class="content">         
+			<h1>Basketball Training</h1>
+			<p>by Leo and Yann</p><br>
+			<NAV>
+<UL>
+<LI>Home</LI>
+
+
+<LI>Levels
+	<UL>
+		<LI><A href='basicsteps.html'>Basic</A></LI>
+		
+		<LI>Advanced</LI>
+	</UL>
+</LI>
+<LI>Videos
+	<UL>
+		<LI><A href='<HTML>.html'>Basic</A></LI>
+
+		<LI>Advanced</LI>
+	</UL>
+</LI>
+
+<LI>Creators
+	<UL>
+		<LI><A href='https://www.youtube.com/channel/UCN7PL9bnvk4df4LSi-klzpA'>Yann</A></LI>
+		<LI><A href='https://www.youtube.com/channel/UC4ujVhO9YHCvtflSBJzrQFw?view_as=subscriber'>Leo Wu</A></LI>
+	</UL>
+</LI>
+
+</UL>
+
+</NAV>
+<br>
+<br>
+<p><p><font size="4"><span style="color:red">Hi, this is a website intro we filmed and edited, it took a long time,<br> and looks more like a funny video in the middle, but,<br>I hope you enjoy and like our video. Lastly, make sure you guys become a better basketball player!</span></font></p></p>
+<br>
+<br>
+<IMG src='yann.png' style="width:300px;height:200px;"><span style="color:blue">Yann</span></IMG><br>
+<IMG src='leo.png' style="width:200px;height:270px;"><span style="color:blue">Leo</span></IMG>
+
+		<
+	</body>
+</html>
